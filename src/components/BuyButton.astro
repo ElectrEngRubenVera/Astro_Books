@@ -1,9 +1,9 @@
 ---
 import AmazonLogo from "./AmazonLogo.astro"
 
-const SPAIN = 'ES'
+const SPAIN = 'CO'
 
-const country = Astro.request.headers.get('X-Vercel-IP-Country') ?? 'ES'
+const country = Astro.request.headers.get('X-Vercel-IP-Country') ?? 'CO'
 
 const storeCountry = country === SPAIN ? 'spain' : 'usa'
 const countryName = country === SPAIN ? 'español' : 'ingles'
