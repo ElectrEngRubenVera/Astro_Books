@@ -1,11 +1,64 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import AboutLogo from '../components/AboutLogo.astro';
+const books = await getCollection('books')
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+export const prerender = true
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Libros recomendados por ElectrEngRubenVera">
+	<main>
+		<h1 class="text-center text-5xl font-extrabold mb-15">Good 🍃
+			<span class="block">Books</span>
+		</h1>
+		<div class="px-4 mx-auto max-w-scren-xl">
+			<section aria-label="Sobre mi">
+				<div class="grid grid-cols-3">
+					
+				</div>
+			</section>
+		</div>
+	</main>
+		<section class="mb-30" aria-label="Libros recomdados para el tiempo libre">
+			<div class="px-4 mx-auto max-w-scren-xl">
+				<div class="grid gap-6 md:grid-cols-2">
+				{
+					books.map(book => {
+						const {slug,data}=book
+						const {title,author,img,readtime,description,buy}=data
+						return (
+							<article class="flex">
+								<a href={`/libro/${slug}`} class="mb-2 xl:mb-0 transition hover:scale-110">
+									<img
+									transition:name={`img-${slug}`}
+									class="mr-5 w-48 rounded"
+									src={`/${img}`}
+									alt={title}/>
+								</a>
+								<div class="flex flex-col justify-center">
+									<h2 transition:name={`title-${slug}`} class="mb-2 text-2xl font-bold leading-tight text-white">
+										{title}
+									</h2>
+									<p class="mb-4 text-gray-300 max-w-sm">{description}</p>
+									<span class="text-xs">🕰️ Lectura en {readtime} minutos</span>
+									
+								</div>
+							</article>
+						)
+						
+					})
+					}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="text-center">
+			<a
+			href="/about"
+			class="text-balance inline-flex gap-2 items-center bg-blue-400 hover:bg-blue-500 active:bg-blue-600 text-black font-bold py-2 px-4 rounded-lg border border-blue-500 transition duration-200 ease-in-out hover:scale-105 justify-center text-center">
+				About Rubén Vera <AboutLogo/>
+			</a>
+		</div>
+	</section>
 </Layout>

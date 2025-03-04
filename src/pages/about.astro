@@ -1,0 +1,56 @@
+
+---
+import LinkedinLogo from '../components/LinkedinLogo.astro';
+import Layout from '../layouts/Layout.astro';
+import GithubLogo from '../components/GitHubLogo.astro';
+import InstagramLogo from '../components/InstagramLogo.astro';
+export const prerender = true
+---
+
+
+<Layout title="About">
+    <main class="container mx-auto px-4 py-8 max-w-3xl">
+        <h1 class="text-4xl font-bold mb-6 text-center">Rubén Vera</h1>
+        <section class="mb-8">
+            <p class=" leading-relaxed">
+                I am an enthusiastic Electrical Engineering student at UIS, eager to explore the intersection of electrical engineering with the digital world.
+            </p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 ">My Passions</h2>
+            <p class= leading-relaxed">
+                I am deeply passionate about harnessing technology to solve real-world challenges. My interests span across: Electrical Engineering, Web Programming, Python and Data Science.
+            </p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 ">Skills</h2>
+            <p class=" leading-relaxed">In my journey, I have cultivated a range of skills including: Analysis and characterization of electrical machines and power systems, electrical network design, advanced electrical measurements, power electronics, web development with Astro, Python programming for automation and scripting, and data analysis and visualization.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 ">Connect with me</h2>
+            <p class=" leading-relaxed mb-4">Feel free to connect with me on my social networks</p>
+            <div class="grid grid-cols-3 gap-4">
+                <a
+                href={"https://www.linkedin.com/in/rub%C3%A9n-vera-168836353"}
+                class="text-balance inline-flex gap-2 items-center justify-center p-1 border border-gray-300 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+                    <LinkedinLogo/>
+                    <span class="text-sm ">LinkedIn</span>
+                </a>
+                <a
+                href={"https://github.com/ElectrEngRubenVera"}
+                class="text-balance inline-flex gap-2 items-center justify-center p-1 border border-gray-300 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+                    <GithubLogo />
+                    <span class="text-sm ">GitHub</span>
+                </a>
+                <a
+                href={"https://www.instagram.com/ruben_vera1/"}
+                class="text-balance inline-flex gap-2 items-center justify-center p-1 border border-gray-300 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+                    <InstagramLogo />
+                    <span class="text-sm ">Instagram</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+</Layout>
