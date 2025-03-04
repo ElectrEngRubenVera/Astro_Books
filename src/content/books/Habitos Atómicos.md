@@ -5,7 +5,7 @@ img: Habitos Atómicos.jpg
 readtime: 900
 description: Propone construir buenos hábitos y romper los malos a través de pequeños cambios. El libro se ha popularizado como una guía para mejorar la productividad y alcanzar metas a largo plazo. 
 buy:
-    spain: https://librerialatina.co/wp-content/uploads/2024/04/HABITOS-ATOMICOS-JAMES-CLEAR.pdf
+    colombia: https://librerialatina.co/wp-content/uploads/2024/04/HABITOS-ATOMICOS-JAMES-CLEAR.pdf
     usa: https://dn790007.ca.archive.org/0/items/atomic-habits-pdfdrive/Atomic%20habits%20%28%20PDFDrive%20%29.pdf
 ---
 "Hábitos Atómicos" (Atomic Habits en inglés) es una obra influyente escrita por James Clear, publicada en 2018, que se ha convertido en un referente mundial sobre el desarrollo personal y la formación de hábitos. El libro presenta un **enfoque innovador y práctico para mejorar cada día a través de pequeños cambios en nuestros comportamientos cotidianos.**
