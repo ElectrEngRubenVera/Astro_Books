@@ -14,9 +14,9 @@ const $$BookScore = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<span class="text-xs" id="score">
 ⭐ Puntuación: ${scoreValue.trim()}/50
 </span>`;
-}, "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/src/components/BookScore.astro", void 0);
+}, "D:/InfoUser/Desktop/Astro_Books/src/components/BookScore.astro", void 0);
 
-const $$file = "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/src/components/BookScore.astro";
+const $$file = "D:/InfoUser/Desktop/Astro_Books/src/components/BookScore.astro";
 const $$url = undefined;
 
 export { $$BookScore as default, $$file as file, $$url as url };

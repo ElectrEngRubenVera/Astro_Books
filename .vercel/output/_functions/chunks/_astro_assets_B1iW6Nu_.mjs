@@ -1233,7 +1233,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './sharp_LIkClQKI.mjs'
+      './sharp_B4kuEeuI.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -1407,7 +1407,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   }
   const { class: className, ...attributes } = { ...additionalAttributes, ...image.attributes };
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(attributes)}${addAttribute(className, "class")}>`;
-}, "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/node_modules/.pnpm/astro@5.4.2_jiti@2.4.2_ligh_454f587c206c2d9b617b69ad121012ce/node_modules/astro/components/Image.astro", void 0);
+}, "D:/InfoUser/Desktop/Astro_Books/node_modules/.pnpm/astro@5.4.2_jiti@2.4.2_ligh_af2a02823ee4a6cad4f023a2a3c29a90/node_modules/astro/components/Image.astro", void 0);
 
 const mimes = {
   "3g2": "video/3gpp2",
@@ -1925,7 +1925,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
     const srcsetAttribute = props.densities || !props.densities && !props.widths && !useResponsive ? `${image.src}${image.srcSet.values.length > 0 ? ", " + image.srcSet.attribute : ""}` : image.srcSet.attribute;
     return renderTemplate`<source${addAttribute(srcsetAttribute, "srcset")}${addAttribute(lookup(image.options.format ?? image.src) ?? `image/${image.options.format}`, "type")}${spreadAttributes(sourceAdditionalAttributes)}>`;
   })}  <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(attributes)}${addAttribute(className, "class")}> </picture>`;
-}, "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/node_modules/.pnpm/astro@5.4.2_jiti@2.4.2_ligh_454f587c206c2d9b617b69ad121012ce/node_modules/astro/components/Picture.astro", void 0);
+}, "D:/InfoUser/Desktop/Astro_Books/node_modules/.pnpm/astro@5.4.2_jiti@2.4.2_ligh_af2a02823ee4a6cad4f023a2a3c29a90/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"endpoint":{"route":"/_image"},"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[],"experimentalResponsiveImages":false};
 					const getImage = async (options) => await getImage$1(options, imageConfig);

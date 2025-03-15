@@ -5,7 +5,7 @@ const $$AmazonLogo = createComponent(($$result, $$props, $$slots) => {
 147 -148 147 148 148 147 -88 0 -87 0 0 140 c0 177 -2 180 -120 180 -67 0 -83
 -3 -100 -20z m140 -220 l0 -160 32 0 33 0 -53 -52 -52 -53 -52 53 -53 52 33 0
 32 0 0 160 0 160 40 0 40 0 0 -160z"></path> <path d="M80 120 l0 -40 400 0 400 0 0 40 0 40 -400 0 -400 0 0 -40z"></path> </g> </svg>`;
-}, "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/src/components/AmazonLogo.astro", void 0);
+}, "D:/InfoUser/Desktop/Astro_Books/src/components/AmazonLogo.astro", void 0);
 
 const $$Astro = createAstro();
 const $$BuyButton = createComponent(($$result, $$props, $$slots) => {
@@ -19,9 +19,9 @@ const $$BuyButton = createComponent(($$result, $$props, $$slots) => {
   const url = buy[storeCountry];
   return renderTemplate`${maybeRenderHead()}<a${addAttribute(url, "href")} title="Comprar libro" target="_blank" rel="noopener noreferrer" class="text-balance inline-flex gap-2 items-center bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-black font-bold py-2 px-4 rounded-lg border border-yellow-500 transition duration-200 ease-in-out hover:scale-105 justify-center text-center">
 Descarga en ${countryName} ${renderComponent($$result, "AmazonLogo", $$AmazonLogo, {})} </a>`;
-}, "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/src/components/BuyButton.astro", void 0);
+}, "D:/InfoUser/Desktop/Astro_Books/src/components/BuyButton.astro", void 0);
 
-const $$file = "C:/Users/Ruben Dario/Desktop/Proyecto1/Astro_Books/src/components/BuyButton.astro";
+const $$file = "D:/InfoUser/Desktop/Astro_Books/src/components/BuyButton.astro";
 const $$url = undefined;
 
 export { $$BuyButton as default, $$file as file, $$url as url };
