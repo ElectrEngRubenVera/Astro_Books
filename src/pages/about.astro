@@ -1,55 +1,129 @@
-
-
 ---
 import LinkedinLogo from '../components/LinkedinLogo.astro';
 import Layout from '../layouts/Layout.astro';
 import GithubLogo from '../components/GitHubLogo.astro';
 import InstagramLogo from '../components/InstagramLogo.astro';
-export const prerender = true
+export const prerender = true;
 ---
 
 <Layout title="About">
-    <main class="container mx-auto px-4 py-8 max-w-3xl">
-        <h1 class="text-4xl font-bold mb-6 text-center">Rubén Vera</h1>
-        <section class="mb-8">
-            <p class="leading-relaxed">
-                I am an enthusiastic Electrical Engineering student at UIS, eager to explore the intersection of electrical engineering with the digital world.
-            </p>
-        </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">My Passions</h2>
-            <p class="leading-relaxed">
-                I am deeply passionate about harnessing technology to solve real-world challenges. My interests span across: Electrical Engineering, Web Programming, Python and Data Science.
-            </p>
-        </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Skills</h2>
-            <p class="leading-relaxed">In my journey, I have cultivated a range of skills including: Analysis and characterization of electrical machines and power systems, electrical network design, advanced electrical measurements, power electronics, web development with Astro, Python programming for automation and scripting, and data analysis and visualization.</p>
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+        <!-- Hero Section -->
+        <div class="relative mb-16">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-10 rounded-2xl"></div>
+            <div class="relative flex flex-col md:flex-row items-center gap-8 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-lg">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+                    <img 
+                        src="Ruben_Vera.jpg" 
+                        alt="Rubén Vera" 
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Rubén Vera</h1>
+                    <p class="text-xl leading-relaxed max-w-2xl">
+                        I am an enthusiastic Electrical Engineering student at UIS, eager to explore the intersection of electrical engineering with the digital world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passions Section -->
+        <section class="mb-16 transform hover:scale-[1.01] transition-transform duration-300">
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="mr-3 text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                    </span>
+                    My Passions
+                </h2>
+                <p class="leading-relaxed text-lg">
+                    I am deeply passionate about harnessing technology to solve real-world challenges. My interests span across: Electrical Engineering, Web Programming, Python and Data Science.
+                </p>
+            </div>
         </section>
 
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Connect with me</h2>
-            <p class="leading-relaxed mb-4">Feel free to connect with me on my social networks</p>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <a
-                href={"https://www.linkedin.com/in/rub%C3%A9n-vera-168836353"}
-                class="text-balance inline-flex gap-2 items-center justify-center p-2 border border-gray-300 rounded-lg hover:bg-gray-800 transition-colors duration-200">
-                    <LinkedinLogo/>
-                    <span class="text-sm">LinkedIn</span>
-                </a>
-                <a
-                href={"https://github.com/ElectrEngRubenVera"}
-                class="text-balance inline-flex gap-2 items-center justify-center p-2 border border-gray-300 rounded-lg hover:bg-gray-800 transition-colors duration-200">
-                    <GithubLogo />
-                    <span class="text-sm">GitHub</span>
-                </a>
-                <a
-                href={"https://www.instagram.com/ruben_vera1/"}
-                class="text-balance inline-flex gap-2 items-center justify-center p-2 border border-gray-300 rounded-lg hover:bg-gray-800 transition-colors duration-200">
-                    <InstagramLogo />
-                    <span class="text-sm">Instagram</span>
-                </a>
+        <!-- Skills Section -->
+        <section class="mb-16 transform hover:scale-[1.01] transition-transform duration-300">
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="mr-3 text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                    </span>
+                    Skills
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-700">
+                        <h3 class="font-semibold text-lg mb-2">Electrical Engineering</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+                            <li>Analysis and characterization of electrical machines</li>
+                            <li>Power systems and electrical network design</li>
+                            <li>Advanced electrical measurements</li>
+                            <li>Power electronics</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-700">
+                        <h3 class="font-semibold text-lg mb-2">Programming & Data</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+                            <li>Web development with Astro</li>
+                            <li>Python programming for automation</li>
+                            <li>Scripting and data analysis</li>
+                            <li>Data visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section class="transform hover:scale-[1.01] transition-transform duration-300">
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="mr-3 text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </span>
+                    Connect with me
+                </h2>
+                <p class="leading-relaxed text-lg mb-6">Feel free to connect with me on my social networks</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a
+                    href="https://www.linkedin.com/in/rub%C3%A9n-vera-168836353"
+                    class="group flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg hover:from-blue-600 hover:to-blue-800 transition-all duration-300 shadow-md hover:shadow-xl">
+                        <span class="transform group-hover:scale-110 transition-transform duration-300">
+                            <LinkedinLogo />
+                        </span>
+                        <span class="font-medium">LinkedIn</span>
+                    </a>
+                    <a
+                    href="https://github.com/ElectrEngRubenVera"
+                    class="group flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-lg hover:from-gray-800 hover:to-black transition-all duration-300 shadow-md hover:shadow-xl">
+                        <span class="transform group-hover:scale-110 transition-transform duration-300">
+                            <GithubLogo />
+                        </span>
+                        <span class="font-medium">GitHub</span>
+                    </a>
+                    <a
+                    href="https://www.instagram.com/ruben_vera1/"
+                    class="group flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-xl">
+                        <span class="transform group-hover:scale-110 transition-transform duration-300">
+                            <InstagramLogo />
+                        </span>
+                        <span class="font-medium">Instagram</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 </Layout>
+
+<style>
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+</style>
