@@ -1,4 +1,4 @@
-import { c as createComponent, m as maybeRenderHead, a as renderTemplate, b as createAstro, d as addAttribute, r as renderComponent } from './astro/server_Bo4kRbgQ.mjs';
+import { c as createComponent, m as maybeRenderHead, b as renderTemplate, a as createAstro, d as addAttribute, r as renderComponent } from './astro/server_C9PmLUE-.mjs';
 
 const $$AmazonLogo = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="24.000000pt" height="24.000000pt" viewBox="0 0 24.000000 24.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,24.000000) scale(0.02500000,-0.02500000)" fill="#000000" stroke="none"> <path d="M380 860 c-18 -18 -20 -33 -20 -160 l0 -140 -87 0 -88 0 148 -147
