@@ -1,4 +1,4 @@
-import { c as createComponent, m as maybeRenderHead, b as renderTemplate } from './astro/server_C9PmLUE-.mjs';
+import { c as createComponent, m as maybeRenderHead, a as renderTemplate } from './astro/server_Bo4kRbgQ.mjs';
 import { s as setOnSetGetEnv } from './runtime_BaX0UJyD.mjs';
 
 // @ts-check

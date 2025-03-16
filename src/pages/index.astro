@@ -8,51 +8,49 @@ export const prerender = true
 ---
 
 <Layout title="Libros recomendados por ElectrEngRubenVera">
-	<main>
-		<h1 class="text-center text-5xl font-extrabold mb-15">Good 🍃
+	<main class="px-4 mx-auto max-w-screen-xl">
+		<h1 class="text-center text-4xl md:text-5xl font-extrabold mb-8 md:mb-15">Good 🍃
 			<span class="block">Books</span>
 		</h1>
-		<div class="px-4 mx-auto max-w-scren-xl">
+		<div>
 			<section aria-label="Sobre mi">
-				<div class="grid grid-cols-3">
-					
+				<div class="grid grid-cols-1 md:grid-cols-3">
+					<!-- Content for "Sobre mi" section -->
 				</div>
 			</section>
 		</div>
 	</main>
-		<section class="mb-30" aria-label="Libros recomdados para el tiempo libre">
-			<div class="px-4 mx-auto max-w-scren-xl">
-				<div class="grid gap-6 md:grid-cols-2">
+		<section class="mb-16 md:mb-30" aria-label="Libros recomdados para el tiempo libre">
+			<div class="px-4 mx-auto max-w-screen-xl">
+				<div class="grid gap-6 grid-cols-1 md:grid-cols-2">
 				{
 					books.map(book => {
 						const {slug,data}=book
 						const {title,author,img,readtime,description,buy}=data
 						return (
-							<article class="flex">
-								<a href={`/libro/${slug}`} class="mb-2 xl:mb-0 transition hover:scale-110">
+							<article class="flex flex-col sm:flex-row">
+								<a href={`/libro/${slug}`} class="mb-4 sm:mb-0 transition hover:scale-105 mx-auto sm:mx-0">
 									<img
 									transition:name={`img-${slug}`}
-									class="mr-5 w-48 rounded"
+									class="sm:mr-5 w-36 sm:w-48 rounded"
 									src={`/${img}`}
 									alt={title}/>
 								</a>
-								<div class="flex flex-col justify-center">
-									<h2 transition:name={`title-${slug}`} class="mb-2 text-2xl font-bold leading-tight text-white">
+								<div class="flex flex-col justify-center text-center sm:text-left">
+									<h2 transition:name={`title-${slug}`} class="mb-2 text-xl sm:text-2xl font-bold leading-tight text-white">
 										{title}
 									</h2>
-									<p class="mb-4 text-gray-300 max-w-sm">{description}</p>
+									<p class="mb-4 text-gray-300 max-w-sm mx-auto sm:mx-0">{description}</p>
 									<span class="text-xs">🕰️ Lectura en {readtime} minutos</span>
-									
 								</div>
 							</article>
 						)
-						
 					})
-					}
+				}
+				</div>
 			</div>
-		</div>
-	</section>
-	<section>
+		</section>
+	<section class="mt-8 mb-12">
 		<div class="text-center">
 			<a
 			href="/about"

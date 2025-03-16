@@ -18,6 +18,10 @@
 		{
 			"src": "^/_image/?$",
 			"dest": "_render"
+		},
+		{
+			"src": "^/about/?$",
+			"dest": "_render"
 		}
 	]
 }
